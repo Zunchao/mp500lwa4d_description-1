@@ -30,16 +30,17 @@
 			<!-- for STL -->
 			<geometry>
 				<mesh filename="package://mp500lwa4d_description/meshes/mp500/MP500-BODY.STL" scale="0.01 0.01 0.01"/>
-			<!--cylinder length="0.381" radius="0.2545"/-->
-			<!--box size="0.445 0.277 0.17"/-->
+				<!--cylinder length="0.381" radius="0.2545"/-->
+				<!--box size="0.445 0.277 0.17"/-->
 			</geometry>
 			<material name="Grey" />
 		</visual>
 		<collision name='body_collision'>
-			<origin xyz="0 0 0.216" rpy="0 0 -1.57" />
+			<origin xyz="-0.160 0.0 0.09" rpy="0 0 -1.57" />
 			<geometry>
-				<box size="0.400 0.676 0.300"/>
-				<!--cylinder length="0.381" radius="0.2545"/-->
+				<mesh filename="package://mp500lwa4d_description/meshes/mp500/MP500-BODY.STL" scale="0.01 0.01 0.01"/>
+				<!--box size="0.400 0.676 0.300"/>
+				<cylinder length="0.381" radius="0.2545"/-->
 			</geometry>
 		</collision>
 	</link>
@@ -61,10 +62,11 @@
 		</visual>
 
 		<collision>
-			<origin xyz="0 0 0" rpy="0 1.57 -1.57" />
+			<origin xyz="0 0 0" rpy="0 0 -1.57" />
 			<geometry>
-				<cylinder radius="0.125" length="0.085"/>
-		</geometry>
+				<mesh filename="package://mp500lwa4d_description/meshes/mp500/MP500-WHEEL.STL" scale="0.01 0.01 0.01" /> 
+				<!--cylinder radius="0.125" length="0.085"/-->
+			</geometry>
 		</collision>
 		
 	</link>
@@ -125,9 +127,10 @@ axis momenta are :
 		</visual>
 
 		<collision>
-			<origin xyz="0 0 0" rpy="0 1.57 -1.57" />
+			<origin xyz="0 0 0" rpy="0 0 -1.57" />
 			<geometry>
-				<cylinder radius="0.125" length="0.085"/>
+				<mesh filename="package://mp500lwa4d_description/meshes/mp500/MP500-WHEEL.STL" scale="0.01 0.01 0.01" />
+				<!--cylinder radius="0.125" length="0.085"/-->
 			</geometry>
 		</collision>
 	</link>
@@ -160,7 +163,8 @@ axis momenta are :
 		<collision>
 			<origin xyz="0 0 0" rpy="0 0 -1.57" />
 			<geometry>
-				<sphere radius="0.00115"/>
+				<mesh filename="package://mp500lwa4d_description/meshes/mp500/HANGER-WHEEL.STL" scale="0.01 0.01 0.01" />
+				<!--sphere radius="0.00115"/-->
 			</geometry>
 		</collision>
 	</link>

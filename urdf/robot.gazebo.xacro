@@ -5,7 +5,7 @@
 
 
         <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
-        <robotNamespace>/mp500lwa4d</robotNamespace>		  
+        <robotNamespace>/</robotNamespace>		  
         <alwaysOn>true</alwaysOn>
         <updateRate>50</updateRate>
         <leftJoint>wheel_left_joint</leftJoint>
